@@ -1,0 +1,10 @@
+flask
+flask-script
+werkzeug
+flask-debugtoolbar
+pymysql
+flask-sqlalchemy
+sqlalchemy
+flask-migrate
+flask-moment
+marshmallow
