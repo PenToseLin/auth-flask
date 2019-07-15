@@ -47,6 +47,14 @@ class User(db.Model):
         """校验密码"""
         return check_password_hash(self.password_hash, pwd)
 
+    def get_auth_list(self):
+        auth_list = []
+        for role in self.roles:
+            for auth in role.auth_list:
+                if auth.url not in auth_list:
+                    auth_list.append(auth.url)
+        return auth_list
+
 
 class UserSchema(Schema):
     id = fields.Int()
