@@ -8,3 +8,4 @@ sqlalchemy
 flask-migrate
 flask-moment
 marshmallow
+flask-jwt-extended

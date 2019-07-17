@@ -32,6 +32,24 @@ class User(db.Model):
             del ret["_sa_instance_state"]
         return ret
 
+    def get(self, user_id):
+        return self.query.filter_by(id=user_id).first()
+
+    @staticmethod
+    def add(user):
+        db.session.add(user)
+        return db.session.commit()
+
+    @staticmethod
+    def update(user):
+        db.session.add(user)
+        return db.session.commit()
+
+    @staticmethod
+    def delete(user):
+        db.session.add(user)
+        return db.session.commit()
+
     @property
     def password(self):
         """读取属性函数"""
