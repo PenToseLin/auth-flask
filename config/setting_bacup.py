@@ -22,6 +22,9 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     JWT_SECRET_KEY = "MiniAchvAuthApplication_JWT"
+    JWT_HEADER_NAME = "access_token"
+    JWT_HEADER_TYPE = ""
+    JWT_ACCESS_TOKEN_EXPIRES = 604800  # 默认token时间7天
 
 
 class DevelopConfig(Config):

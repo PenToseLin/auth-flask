@@ -1,7 +1,9 @@
 import re
 from datetime import datetime
 from flask import Blueprint, jsonify, request
+from flask_jwt_extended import jwt_required
 from sqlalchemy import desc, asc
+from App.common.auth_check import AuthCheck
 from App.ext import db
 from App.model.role import Role
 from App.model.user import User, UserSchema
@@ -9,9 +11,10 @@ from App.model.user import User, UserSchema
 user_router = Blueprint("user_router", __name__)
 
 
-@user_router.route('/list')
+@user_router.route('/list', methods=['GET'], endpoint='user_list')
+@jwt_required
+@AuthCheck.check_api_auth
 def query_list():
-
     page_no = request.args.get('pageNo', 1, type=int)
     page_size = request.args.get('pageSize', 10, type=int)
     username = request.args.get('username', None, type=str)
@@ -43,10 +46,6 @@ def query_list():
     if sorter is not None:
         sorter_list = sorter.split('~')
         user_list = user_list.order_by(globals()[sorter_list[1]](sorter_list[0]))
-        # if 'asc' in sorter_list[1]:
-        #     user_list = user_list.order_by(asc(sorter_list[0]))
-        # if 'desc' in sorter_list[1]:
-        #     user_list = user_list.order_by(desc(sorter_list[0]))
 
     total = user_list.count()
     user_list = user_list.offset((page_no - 1) * page_size).limit(page_size)
@@ -64,7 +63,9 @@ def query_list():
     return jsonify({'code': 200, 'msg': 'success', 'data': ret_data})
 
 
-@user_router.route('/add', methods=['POST'])
+@user_router.route('/add', methods=['POST'], endpoint='user_add')
+@jwt_required
+@AuthCheck.check_api_auth
 def add():
     post_data = request.get_json()
     username = post_data.get('username')
@@ -77,7 +78,7 @@ def add():
         return jsonify(code=400, msg='参数不完整')
 
     if User.query.filter(User.username.__eq__(username), User.status.__gt__(-1)).first():
-        return jsonify(code=400, msg='改用户名已被使用')
+        return jsonify(code=400, msg='用户名已被使用')
 
     if not re.match(r"1[2-9]\d{9}", mobile):
         return jsonify(code=400, msg='手机号码格式有误')
@@ -104,7 +105,9 @@ def add():
     return jsonify({'code': 200, 'msg': '注册成功'})
 
 
-@user_router.route('/update', methods=['PUT'])
+@user_router.route('/update', methods=['PUT'], endpoint='user_update')
+@jwt_required
+@AuthCheck.check_api_auth
 def update():
     post_data = request.get_json()
     user_id = post_data.get('id')
@@ -150,7 +153,9 @@ def update():
     return jsonify({'code': 200, 'msg': '修改成功'})
 
 
-@user_router.route('/disable', methods=['PUT'])
+@user_router.route('/disable', methods=['PUT'], endpoint='user_disable')
+@jwt_required
+@AuthCheck.check_api_auth
 def disable():
     post_data = request.get_json()
     user_id = post_data.get('id')
@@ -169,7 +174,9 @@ def disable():
     return jsonify(code=200, msg='操作成功')
 
 
-@user_router.route('/enable', methods=['PUT'])
+@user_router.route('/enable', methods=['PUT'], endpoint='user_enable')
+@jwt_required
+@AuthCheck.check_api_auth
 def enable():
     post_data = request.get_json()
     user_id = post_data.get('id')
@@ -188,7 +195,9 @@ def enable():
     return jsonify(code=200, msg='操作成功')
 
 
-@user_router.route('/remove', methods=['DELETE'])
+@user_router.route('/remove', methods=['DELETE'], endpoint='user_remove')
+@jwt_required
+@AuthCheck.check_api_auth
 def remove():
     post_data = request.get_json()
     id_list = post_data.get('id_list')

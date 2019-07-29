@@ -1,6 +1,8 @@
 from datetime import datetime
 from flask import Blueprint, jsonify, request
+from flask_jwt_extended import jwt_required
 from sqlalchemy import desc, asc
+from App.common.auth_check import AuthCheck
 from App.ext import db
 from App.model.auth import Auth, AuthSchema
 from App.model.menu import Menu
@@ -24,6 +26,8 @@ def get_auth_children(auth_id):
 
 
 @auth_router.route('/list')
+@jwt_required
+@AuthCheck.check_api_auth
 def query_list():
     page_no = request.args.get('pageNo', 1, type=int)
     page_size = request.args.get('pageSize', 10, type=int)
@@ -117,10 +121,6 @@ def add():
         auth.tree_path = '%s%d,' % (parent_auth.tree_path, auth.parent_id)
     else:
         menu_url = menu.url
-        # if menu_url.startswith('/'):
-        #     menu_url = 'admin{0}'.format(menu_url)
-        # else:
-        #     menu_url = 'admin/{0}'.format(menu_url)
 
     if not menu_url.endswith('/'):
         menu_url = '{0}/'.format(menu_url)

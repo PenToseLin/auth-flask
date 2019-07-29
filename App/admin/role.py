@@ -1,6 +1,8 @@
 from datetime import datetime
 from flask import Blueprint, jsonify, request
+from flask_jwt_extended import jwt_required
 from sqlalchemy import desc, asc
+from App.common.auth_check import AuthCheck
 from App.ext import db
 from App.model.auth import Auth
 from App.model.role import Role, RoleSchema
@@ -8,7 +10,9 @@ from App.model.role import Role, RoleSchema
 role_router = Blueprint("role_router", __name__)
 
 
-@role_router.route('/list')
+@role_router.route('/list', methods=['GET'])
+@jwt_required
+@AuthCheck.check_api_auth
 def query_list():
     page_no = request.args.get('pageNo', 1, type=int)
     page_size = request.args.get('pageSize', 10, type=int)
@@ -53,6 +57,8 @@ def query_list():
 
 
 @role_router.route('/add', methods=['POST'])
+@jwt_required
+@AuthCheck.check_api_auth
 def add():
     post_data = request.get_json()
     role_name = post_data.get('role_name')
@@ -63,13 +69,14 @@ def add():
         return jsonify(code=400, msg='角色名称不能为空')
 
     role = Role()
+    role.role_name = role_name
+    role.depict = depict
+
     if auth_ids:
         for auth_id in auth_ids:
             auth = Auth.query.filter_by(id=auth_id).first()
             role.auth_list.append(auth)
 
-    role.role_name = role_name
-    role.depict = depict
     db.session.add(role)
     db.session.commit()
 
@@ -77,6 +84,8 @@ def add():
 
 
 @role_router.route('/update', methods=['PUT'])
+@jwt_required
+@AuthCheck.check_api_auth
 def update():
     post_data = request.get_json()
     role_id = post_data.get('id')
@@ -106,6 +115,8 @@ def update():
 
 
 @role_router.route('/disable', methods=['PUT'])
+@jwt_required
+@AuthCheck.check_api_auth
 def disable():
     post_data = request.get_json()
     role_id = post_data.get('id')
@@ -125,6 +136,8 @@ def disable():
 
 
 @role_router.route('/enable', methods=['PUT'])
+@jwt_required
+@AuthCheck.check_api_auth
 def enable():
     post_data = request.get_json()
     role_id = post_data.get('id')
@@ -147,6 +160,8 @@ def enable():
 
 
 @role_router.route('/remove', methods=['DELETE'])
+@jwt_required
+@AuthCheck.check_api_auth
 def remove():
     post_data = request.get_json()
     id_list = post_data.get('id_list')
@@ -169,6 +184,7 @@ def remove():
 
 
 @role_router.route('/all', methods=['GET'])
+@jwt_required
 def query_all():
     role_list = Role.query.all()
     role_list = RoleSchema().dump(role_list, many=True)

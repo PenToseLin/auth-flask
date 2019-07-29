@@ -8,7 +8,7 @@ from App.admin.menu import menu_router
 def init_router(app):
     # 后台管理路由
     app.register_blueprint(admin_router, url_prefix="/admin-api")
-    app.register_blueprint(user_router, url_prefix="/admin-api/user")
-    app.register_blueprint(role_router, url_prefix="/admin-api/role")
-    app.register_blueprint(menu_router, url_prefix="/admin-api/menu")
-    app.register_blueprint(auth_router, url_prefix="/admin-api/auth")
+    app.register_blueprint(user_router, url_prefix="/admin-api/manage/user")
+    app.register_blueprint(role_router, url_prefix="/admin-api/manage/role")
+    app.register_blueprint(menu_router, url_prefix="/admin-api/manage/menu")
+    app.register_blueprint(auth_router, url_prefix="/admin-api/manage/auth")

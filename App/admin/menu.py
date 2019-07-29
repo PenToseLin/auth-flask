@@ -1,6 +1,8 @@
 from datetime import datetime
 from flask import Blueprint, jsonify, request
+from flask_jwt_extended import jwt_required
 from sqlalchemy import desc, asc
+from App.common.auth_check import AuthCheck
 from App.ext import db
 from App.model.auth import Auth
 from App.model.menu import Menu
@@ -22,6 +24,8 @@ def get_menu_children(menu_id):
 
 
 @menu_router.route('/list')
+@jwt_required
+@AuthCheck.check_api_auth
 def query_list():
     page_no = request.args.get('pageNo', 1, type=int)
     page_size = request.args.get('pageSize', 10, type=int)
@@ -84,6 +88,8 @@ def add():
         return jsonify(code=400, msg='菜单名称不能为空')
     if not url:
         return jsonify(code=400, msg='菜单路径不能为空')
+    if Menu.query.filter_by(menu_name=menu_name).first():
+        return jsonify(code=400, msg='该菜单已经存在')
 
     menu = Menu()
     menu.menu_name = menu_name
