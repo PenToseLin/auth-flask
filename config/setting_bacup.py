@@ -20,6 +20,7 @@ class Config:
     SECRET_KEY = "MiniAchvAuthApplication"
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_POOL_RECYCLE = 600
 
     JWT_SECRET_KEY = "MiniAchvAuthApplication_JWT"
     JWT_HEADER_NAME = "access_token"

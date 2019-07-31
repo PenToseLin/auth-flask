@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="949b0400-8c61-4c13-a393-c35d00491ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/App/common/auth_check.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/admin/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/admin/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/admin/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/admin/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/admin/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/admin/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/admin/role.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/admin/role.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/admin/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/admin/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/common/jwt.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/common/jwt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/url.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/setting_bacup.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/setting_bacup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,19 +27,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/admin/role.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="312">
+              <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <element signature="e#456#2062#0" />
-                <element signature="e#2165#2714#0" />
-                <element signature="e#2822#3564#0" />
-                <element signature="e#3674#4037#0" />
-                <element signature="e#4145#4583#0" />
-                <element signature="e#4694#5192#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/ext.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/setting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/setting_bacup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/admin/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
+            <state relative-caret-position="4082">
               <caret line="164" column="47" selection-start-line="164" selection-start-column="47" selection-end-line="164" selection-end-column="47" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -122,10 +174,8 @@
         <option value="$PROJECT_DIR$/App/model/user.py" />
         <option value="$PROJECT_DIR$/App/common/token.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/config/setting_bacup.py" />
         <option value="$PROJECT_DIR$/App/common/jwt.py" />
         <option value="$PROJECT_DIR$/App/__init__.py" />
-        <option value="$PROJECT_DIR$/config/setting.py" />
         <option value="$PROJECT_DIR$/App/common/authentication.py" />
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/flask_jwt/__init__.py" />
         <option value="$PROJECT_DIR$/App/admin/user.py" />
@@ -136,6 +186,9 @@
         <option value="$PROJECT_DIR$/App/admin/auth.py" />
         <option value="$PROJECT_DIR$/App/admin/menu.py" />
         <option value="$PROJECT_DIR$/App/admin/role.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions" />
+        <option value="$PROJECT_DIR$/config/setting.py" />
+        <option value="$PROJECT_DIR$/config/setting_bacup.py" />
       </list>
     </option>
   </component>
@@ -151,26 +204,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="flask_auth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -271,12 +316,17 @@
       <workItem from="1562891900991" duration="44638000" />
       <workItem from="1563755892586" duration="12123000" />
       <workItem from="1563934857660" duration="14069000" />
-      <workItem from="1564020813532" duration="16981000" />
+      <workItem from="1564020813532" duration="18269000" />
+      <workItem from="1564474033730" duration="605000" />
+      <workItem from="1564474714089" duration="165000" />
+      <workItem from="1564474901213" duration="50000" />
+      <workItem from="1564474963634" duration="3041000" />
+      <workItem from="1564539043809" duration="11690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287525000" />
+    <option name="totallyTimeSpent" value="304364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -288,30 +338,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49852508" visible="true" weight="0.12526652" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49852508" visible="true" weight="0.13059701" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4946695" weight="0.4667382" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936034" visible="true" weight="0.2693133" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978678" weight="0.29399142" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32832617" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32939914" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5053305" side_tool="true" weight="0.27896994" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5063966" side_tool="true" weight="0.20386267" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4978678" weight="0.33690986" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4978678" weight="0.32832617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Structure" order="3" sideWeight="0.5014749" visible="true" weight="0.09115139" />
+      <window_info anchor="right" id="Structure" order="3" sideWeight="0.5014749" weight="0.15351813" />
       <window_info anchor="right" id="SciView" order="4" weight="0.2793177" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Redis Servers" order="6" weight="0.25746268" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +369,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_auth$flask_auth.coverage" NAME="flask_auth Coverage Results" MODIFIED="1560249030145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_auth$manage.coverage" NAME="manage Coverage Results" MODIFIED="1564125701259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_auth$manage.coverage" NAME="manage Coverage Results" MODIFIED="1564544950632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/pip-selfcheck.json">
@@ -449,32 +499,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/admin/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_jwt_extended/view_decorators.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -493,20 +519,6 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/setting_bacup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -531,32 +543,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/ext.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/admin/user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -601,9 +593,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="redis://IedisURI?type=Explorer&amp;label=47.112.142.195&amp;host=47.112.142.195&amp;port=7001&amp;password=null&amp;timestamp=1564474046288&amp;nodeHost=47.112.142.195&amp;nodePort=7001" />
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/admin/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
+        <state relative-caret-position="4082">
           <caret line="164" column="47" selection-start-line="164" selection-start-column="47" selection-end-line="164" selection-end-column="47" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -611,19 +631,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/702cfadb-c4f8-4d59-b385-24f284fcead0/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/ext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/admin/role.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="312">
+          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#456#2062#0" />
-            <element signature="e#2165#2714#0" />
-            <element signature="e#2822#3564#0" />
-            <element signature="e#3674#4037#0" />
-            <element signature="e#4145#4583#0" />
-            <element signature="e#4694#5192#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/setting_bacup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
         </state>
       </provider>
     </entry>
